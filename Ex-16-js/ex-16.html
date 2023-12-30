@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-16</title>
+    <link rel="stylesheet" href="ex-16.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flex line">
+          <label>Exercise No:16</label>
+          <h2 class="content-head">Array</h2>
+        </div>
+        <div class="line">
+          <div class="round flex">
+            <label>Enter the Employee Number:</label>
+            <input type="number" onkeypress="avoidnegative(event)" id="first_Number" class="age inputfield"/>
+          </div>
+          <div class="add-button round flex-space">
+            <button onclick="add_Name()" id="reset">Add</button>
+          </div>
+        </div>
+        <div class="flexonly  secondbox ">
+            <div class="line-right">
+                <div class="flexrow round">
+                <label>Enter the Number to be Searched:</label>
+                <input type="number" onkeypress="avoidnegative(event)" id="search_Number" class="age inputfield" />
+                </div>
+                <div class="round flexrow ">
+                <label>Searched Number:</label>
+                <input type="text"id="display_Search" class="age inputfield" readonly/>
+                </div>
+            </div>    
+            <div class="">
+                <div class="round flexrow">
+                <label>Adding Numbers To the Array</label>
+                <textarea id="display_Employees_Number" readonly></textarea>
+                </div>
+            </div>
+        </div>    
+        <div class=" round ">
+          <button onclick="searchEmployee()">Search Text</button>
+          <button class="blue-button" onclick="reset()" id="reset">Reset</button>
+        </div>
+    </div>
+
+      </div>
+    </div>
+
+
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Array Basics</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+    <script src="ex-16.js"></script>
+  </body>
+</html>
+    

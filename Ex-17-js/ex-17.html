@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-17</title>
+    <link rel="stylesheet" href="ex-17.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flex line">
+          <label>Exercise No:17</label>
+          <h2 class="content-head">Sort & Find Method</h2>
+        </div>
+        <div class="line">
+          <div class="round flex">
+            <label>Enter Number of Employees :</label>
+            <input type="number" onkeypress=" avoidnegative(event)" id="total_Number" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter Employee Number:</label>
+            <input type="number" onkeypress=" avoidnegative(event)" id="enter_Number" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="enter_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter Employee Department:</label>
+            <input type="text" id="enter_Department" class="age inputfield"/>
+          </div>
+          <div class="add-button round flex-space">
+            <button onclick="add_Name()">Add</button>
+          </div>
+        </div>
+        <div class="flex  secondbox ">
+          <div class="">
+            <div class="round flex pad">
+              <label>Employee Array:</label>
+              <table id="employee_Table">
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Department</th>
+                </tr>
+              </table>
+            </div>
+            <div class="flex round">
+              <label>Employee(sorted):</label>
+              <table id="employee_Sort">
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Department</th>
+                </tr>
+              </table>
+              </div>
+            <div class="flex round down">
+              <label>Enter Emp Name to Searched:</label>
+              <input type="text"  id="search_Name" class="age inputfield" />
+            </div>
+            <div class="round  flex">
+              <label>Searched Employee:</label>
+              <textarea id="display_Employees_Name" readonly></textarea>
+            </div>
+            <div class=" round flex-space ">
+              <button onclick="sortEmployee()">Sort the Employees</button>
+              <button onclick="searchEmployee()">Search the Employee</button>
+              <button  onclick="reset()" >Reset</button>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+    <div>
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Every, Sort, Filter Method</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+  </div>
+</div>
+    <script src="ex-17.js"></script>
+  </body>
+</html>
+    

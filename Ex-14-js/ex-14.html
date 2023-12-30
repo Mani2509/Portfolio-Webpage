@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-14</title>
+    <link rel="stylesheet" href="ex-14.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flex line">
+          <label>Exercise No:14</label>
+          <h2 class="content-head">Name Search(Variables)</h2>
+        </div>
+        <div class="line">
+          <div class="round flex">
+            <label>Enter the First Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="first_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Second Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="second_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Third Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="third_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Fourth Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="fourth_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Fivth Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="fivth_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Sixth Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="sixth_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Seventh Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="seventh_Name" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter the Eighth Employee Name:</label>
+            <input type="text" onkeypress="return onlyAlphabet(event)" id="eighth_Name" class="age inputfield"/>
+          </div>
+        </div>
+        <div class="">
+            <div class="round flex">
+              <label>Enter the Name to be Searched:</label>
+              <input type="text"  id="search_Name" class="age inputfield" />
+            </div>
+            <div class="round flex">
+              <label>Searched Text:</label>
+              <input type="text"id="display_Search" class="age inputfield" readonly/>
+            </div>
+        </div>
+        
+        <div class="blue-button round flex-space">
+          <button onclick="searchEmployee()">Search Text</button>
+          <button onclick="reset()" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Basic Text Search Concept</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+    <script src="ex-14.js"></script>
+  </body>
+</html>
+    

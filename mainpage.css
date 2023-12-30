@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,red,blue);
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.photo{
+    width: 120px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.myname{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.myname p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.myname h1{
+    font-size: 100px;
+    line-height: 100px;
+    margin-left: -10px;
+    color: transparent;
+    background:linear-gradient(yellow,blue);
+    background-clip:text;
+    -webkit-background-clip: text;
+    animation: back 10s linear infinite;
+}
+@keyframes back{
+    0% {
+        background-position: 0 0;
+        color: yellow;
+    }
+    25%{
+        background-position: 500px 0;
+        color: orangered;
+    }
+    50% {
+        background-position: 1000px 0;
+        color: blue;
+    }
+    75%{
+        background-position: 1500px 0;
+        color: aqua;
+    }
+    100%{
+        background-position: 2000px 0;
+    }
+}
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom left, blue,orange);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.head{
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+.resumebox{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.resume {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+iframe{
+    position: absolute;
+    margin: 2px;
+    width: 98%;
+    height: 98%;
+}
+.resume::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red,yellow);
+    animation: rotate 5s linear infinite;
+}
+.resume::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); 
+       }
+    
+    100% {
+        transform: rotate(360deg); 
+       }
+}
+#projects{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to bottom right,orange, green);
+}
+.outer{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(252, 0, 193),lightgreen);
+    color: black;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+#contact{
+    width: 100%;
+    height: 50vh;
+    background: darkblue;
+    position: relative;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background: cyan;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px grey, 0 0 10px cyan,0 0 20px cyan;
+    animation: rain 1s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even){
+    background: red;
+    box-shadow: 0 0 0 5px brown, 0 0 10px red,0 0 20px red;
+}
+@keyframes rain{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(10vh) scale(1);
+    }
+}
+#contact ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+#contact ul li {
+    margin: 20px 50px;
+    text-align: center;
+}
+#contact ul li img{
+    display: block;
+}
+#contact ul li a{
+    text-decoration: none;
+    color: pink;    
+}
+.contactlogo{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
