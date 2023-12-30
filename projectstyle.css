@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-image: linear-gradient(to bottom right,rgb(23, 23, 44),rgb(1, 1, 44));
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+p,h3{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+.text{
+    font-weight: 800;
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: animate 10s linear infinite;
+  }
+  @keyframes animate {
+    to{
+      background-position: 400%;
+    }
+  }
+  .proj ul {
+    display:inline-block;
+    margin-left: 30%;
+    list-style:decimal;
+    padding: 20px;
+  }
+  li{
+    color: orange;
+    padding: 10px;
+  }
+  .btn{
+    padding: 4px;
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(252, 0, 193),lightgreen);
+    color: black;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
