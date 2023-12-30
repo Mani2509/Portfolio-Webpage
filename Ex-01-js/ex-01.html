@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-1</title>
+    <link rel="stylesheet" href="ex-01.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header" class="flex-space">
+        <div class="logo flex-space">
+            <img src="infologo.png" alt="infologo">
+            <h2>INFOTECH <br>ASHRAM</h2>
+        </div>
+        <div>
+            <h1 class="jsprogram">JavaScript Training Program</h1>
+        </div>
+        <div>
+            <p id="current-date"></p>
+            <p id="current-time"></p>
+        </div>
+    </div>
+    <div class="container flex">
+        <div id="content" class="">
+                <div class="str flex fn flex-space">
+                    <label>Exercise No:1</label>
+                    <h1 class="cen">String Functions</h1>
+                </div>
+                <hr>
+
+                    <div class="str flex flex-space">
+                        <label>Enter the String</label>
+                        <input type="text" id="user-string" onkeypress="return onlyAlphabet(event)">
+                    </div>
+                    <div class="str flex flex-space">
+                        <label>Enter the String to be Searched</label>
+                        <input type="text" id="searchstring">
+                    </div>
+                    <hr>
+                <div class="str flex flex-space">
+                    <label> Searched String</label>
+                    <input type="text"id="displayString" readonly>
+                </div>
+                <div class="str flex flex-space">
+                    <label>Palindrome/Not</label>
+                    <input type="text" id="palindrome" readonly>
+                </div>
+                <div class="str flex flex-space">
+                    <label>Reversed String</label>
+                    <input type="text" id="reversestring" readonly>
+                </div>
+                <div class="str flex flex-space">
+                    <button onclick="searchString()">Search</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
+        </div>
+    </div>
+    <footer id="footer" class="flex-space">
+        <p>Learning Objective : Handling Strings</p>
+        <div class="flex">
+            <p>Powered by :</p>
+             <img src="logo.jpeg" width="60px" height="50px" alt="logo">
+        </div>
+    </footer>
+    <script src="ex-01.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.jsprogram{
+    font-family: 'Comic Neue', cursive;
+}
+.container{
+    background-color: white;
+    justify-content: center;
+    height: 653px;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+}
+#header{
+    background-color: #365278;
+    color: #E2D9CC;
+    padding: 0 10px;
+    align-items: center;
+}
+#content{
+    background-color: #F3F3CB;
+    color: #36537A;
+    /* width: 35%; */
+    padding: 10px 20px 30px  ;
+}
+#footer{
+    background-color: #E1F2F2;
+    color: #36537A;
+    align-items: center;
+    padding: 0 10px 0 50px;
+}
+.str{
+    padding: 5px 20px;
+}
+.cen{
+    margin-right: 140px;
+    font-weight: normal;
+}
+input{
+    padding: 5px;
+    width: 150px;
+}
+label{
+    width: 400px;
+}
+button{
+    border-radius: 5px;
+    color: white;
+    background-color: #365278;
+    padding: 5px ;
+    width: 150px;
+}
+hr{
+    margin: 5px 0;
+    width:100%;
+}
+img{
+    padding: 0 5px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.fn label{
+    width:100px ;
+}

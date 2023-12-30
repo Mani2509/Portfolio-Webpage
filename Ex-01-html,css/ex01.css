@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.grid_container {
+  height: 97vh;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 40vh 1fr 40vh;
+}
+
+.left {
+  grid-row: 1/5;
+  background-color: #f7dfdf;
+}
+.right {
+  grid-row: span 4;
+  background-color: #f7dfdf;
+}
+.top {
+  grid-row: span 2;
+  background-color: #f7dfdf;
+}
+.bottom {
+  grid-row: span 2;
+  background-color: #f7dfdf;
+}

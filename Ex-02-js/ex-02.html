@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2</title>
+    <link rel="stylesheet" href="ex-02.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header" class="flex-space">
+        <div class="logo flex-space">
+            <img src="infologo.png" alt="infologo">
+            <h2>INFOTECH <br>ASHRAM</h2>
+        </div>
+        <div>
+            <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+        </div>
+        <div>
+            <p id="current-date"></p>
+            <p id="current-time"></p>
+        </div>
+    </div>
+    <div class="container flex">
+        <div id="content">
+            <div class="round line flex flex-space">
+                <label>Exercise No:2</label>
+                <p class="content-head">Time</p>
+            </div>
+            <div class="line">
+                <div class="round flex flex-space">
+                    <label>Enter Hour(s)</label>
+                    <input type="number" id="input-hour" min="0" onkeypress="avoidnegative(event)">
+                </div>
+                <div class="round flex flex-space">
+                    <label>Enter Minute(s)</label>
+                    <input type="number" id="input-minute" min="0" onkeypress="avoidnegative(event)">
+                </div>
+                <div class="blue-button round">
+                    <button onclick="convertsecond()">Convert to Seconds</button>
+                </div>
+                <div class="round flex flex-space answer">
+                    <label> Seconds</label>
+                    <input type="text"id="displaySecond" readonly>
+                </div>
+            </div>
+            <div class="round flex flex-space">
+                <label>Enter Second(s)</label>
+                <input type="number" id="input-second" min="0" onkeypress="avoidnegative(event)">
+            </div>
+            <div class="blue-button round">
+                <button onclick="converthourminute()">Convert to Hours and Minutes</button>
+            </div>
+            <div class="round flex flex-space answer">
+                <label>Hours and Minutes</label>
+                <input class="field" type="text" id="displayHourMinute" readonly>
+            </div>
+            <div class="blue-button round">
+                <button onclick="reset()">Reset</button>                
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="flex-space">
+        <p>Learning Objective : Handling Strings</p>
+        <div class="flex">
+            <p>Powered by :</p>
+             <img src="logo.jpeg" width="60px" height="50px" alt="logo">
+        </div>
+    </footer>
+    <script src="ex-02.js"></script>
+</body>
+</html>

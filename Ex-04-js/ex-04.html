@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-4</title>
+    <link rel="stylesheet" href="ex-04.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flex-space line">
+          <label>Exercise No:4</label>
+          <h2 class="content-head">Age Comparison</h2>
+        </div>
+        <div class="line">
+          <div class="round flex-space">
+            <label>Enter First Person`s Age</label>
+            <input type="number" id="input-firstage" min="1" max="110" onkeypress="avoidnegative(event)" class="age"/>
+          </div>
+          <div class="round flex-space">
+            <label>Enter Second Person`s Age</label>
+            <input type="number" id="input-secondage" min="1" max="110" onkeypress="avoidnegative(event)" class="age secondage" />
+          </div>
+          <div class="round flex-space">
+            <label>Enter Third Person`s Age</label>
+            <input type="number" id="input-thirdage" min="1" max="110" onkeypress="avoidnegative(event)" class="age" />
+          </div>
+        </div>
+        <div class="round  flex-space">
+            <label>Who is Elder?</label>
+            <textarea id="displayElder" readonly></textarea>
+          </div>
+          <div class="round  flex-space">
+            <label>Age(Descending Order)</label>
+            <textarea id="displayAgeDescend" readonly></textarea>
+          </div>
+        <div class="blue-button round flex-space">
+          <button onclick="compareage()">Submit</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Handling Strings</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+    <!-- <script src="ex-04.js"></script> -->
+    <script src="ex-004.js"></script>
+  </body>
+</html>

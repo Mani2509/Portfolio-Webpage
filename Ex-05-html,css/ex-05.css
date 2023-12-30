@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container{
+    font-family: 'Roboto', sans-serif;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.media{
+    background-image: url(jeans.jpg);
+    background-size:cover;
+    background-position: center;
+    align-items: center;
+    padding: 10px;
+}
+.media .icons i{
+    border: solid;
+    border-radius: 20px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.lang-Rs select{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+.navbar{
+    background-color: #f2f2f2;
+    height: 100px;
+    align-items: center;
+}
+.logo{
+    width: 220px;
+    height:100%;
+    background-image: url(gecko_logo.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}
+.bar{
+    font-size: 20px;
+    display: none;
+}
+.nav-links ul{
+    column-gap: 40px;
+    row-gap: 16px;
+    flex-wrap: wrap;
+}
+.red-color{
+    color: red;
+}
+.pos-rel,.half-line,#sign-up{
+    position: relative;
+}
+.power{
+    border-radius: 20px;
+    font-size:10px ;
+    padding: 5px;
+    position: absolute;
+    bottom: 15px;
+}
+.shop{
+    background-color: #51b2d6;
+    left:40px;
+}
+.hotpage{
+    background-color: #dd0000;
+    left:49px;
+}
+.sale{
+    background-color: #e8b43f;
+    left:20px;
+}
+.like{
+    background-color: black;
+    padding: 6px 8px;
+    bottom:25px;
+    left:20px;
+}
+.settings{
+    margin: 10px;
+}
+.settings i{
+    padding: 10px 6px;
+    font-size: 25px;
+}
+.slide{
+    display: flex;
+    text-align: center;
+}
+.slide {
+    line-height: 40px;
+    overflow-x: auto;
+}
+.slide::-webkit-scrollbar{
+    width: 0;
+}
+.slides{
+    background-size: 100%;
+    height: 300px;
+    min-width: 472px;
+    justify-content: end;
+}
+.slide-one{
+    background-image: url(backpack_puritaan_2_900x.jpg);
+}
+.slide-zero{
+    background-image: url(download.jpeg);
+}
+#hints{
+    background-color:rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+.word-trans{
+    opacity: 0.5;
+}
+.slide-two{
+    background-image: url(8NHBORBRVR_900x.jpg);
+}
+.slide-three{
+    background-image: url(blog_01_900x.jpg);
+}
+.home-page{
+    margin:50px 100px ;
+}
+#pro-detail{
+    background-color: rgb(0, 0, 0, 0.8);
+    margin: 30px; 
+}
+.product-details{
+    background-color: #e6eae8;
+    padding: 20px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+.product-details button{
+    border:solid burlywood;
+    color: burlywood;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+.normal-product{
+    margin-bottom: 90px;
+}
+.product,.product-one,.product-two{
+    background-size: 100% 100%;
+    height: 500px;
+    justify-content: end;
+}
+.product{
+    background-image: url(julia01_900x.jpg);
+}
+.product-one{
+    background-image: url(301be29690199.560d857c7a92e_900x.jpg);
+}
+.product-two{
+    background-image: url(Voong-bong-Castor-Design-1_900x.jpg);
+}
+.next-product,.product,.product-one,.product-two{
+    text-align: center;
+}
+.next-links a{ 
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+#first-Page{
+    color: burlywood;
+}
+.page-details{
+    margin-left: 20px;
+}
+.word{
+    letter-spacing: 2px;
+}
+.topbox{
+    padding: 50px 0 0px 0;
+}
+.half-line::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 22%;
+    height: 2px;
+    background-color: black;
+}
+.box{
+    padding: 20px 0;
+}
+.search-box form {
+    padding-top: 20px;
+}
+.r-input{
+    border-radius: 20px;
+    padding:12px;
+    width: 260px;
+}
+.r-button{
+    padding: 9px 20px;
+    position: absolute;
+    border-radius: 15px;
+    border: none;
+}
+.search-box form button{
+    right: 8%;
+    top: 38%;
+    background-color: black;
+}
+.category-box ul{
+    line-height: 30px;
+    height: 95px;
+    overflow-y: auto;
+}
+.category-box ul::-webkit-scrollbar{
+    height: 0;
+}
+.insta-pic{
+    padding : 40px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3,91px);
+    gap: 2px;
+}
+.insta-pic img{
+    width: 90px;
+}
+.blog-box{
+    width: 250px;
+}
+.blog-box button{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
+    color:gray;
+}
+#sales{
+    display: flex;
+    gap: 10px;
+}
+#sales img{
+    width: 87px;
+}
+#sales p{
+    letter-spacing: 1px;
+}
+#amount{
+    line-height: 30px;
+    font-family: 'Lato', sans-serif;
+}
+.up-mid-arrow{
+    bottom: 30px;
+    right: -97px;
+}
+#upMiddle-arrow{
+    position: absolute;
+}
+.short-link{
+    width: 275px;
+    opacity: 0.5;
+}
+.short-link p{
+    line-height: 25px;
+    padding: 5px 0;
+}
+.lastpage-container{
+    background-image:url(mountain.jpeg.jpeg);
+    background-size: 100% 100%;
+    padding: 60px 120px;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+.loc i,.gmail i,#ph-number i{
+    margin: 6px 6px 0 0;     
+}
+.ph-address div{
+    width: 220px;
+    display: flex;
+    padding: 5px 0;
+}
+#adress h1{
+    letter-spacing: 20px;
+    padding-bottom: 20px;
+    color: #a0a4a8;
+    font-family: 'Montserrat', sans-serif;
+}
+#social-icon i{
+    margin-right: 20px;
+}
+.information{
+    gap: 110px;
+    line-height: 40px;
+}
+.information i{
+    display: none;
+}
+.log{
+    width: 260px;
+    gap: 20px;
+}
+#sign-up input{
+    border: solid white;
+    background-color: black;
+}
+#sign-up input::placeholder,.wht{
+    color: white;
+}
+#sign-up button{
+    top: 5px;
+    right: 5px;
+    background-color: burlywood;
+}
+.cards i{
+    margin: 0 5px;  
+    font-size: 23px; 
+    opacity: 0.5;
+}
+.copyright{
+    position: relative;
+    background-color: black;
+    align-items: center;
+    padding: 30px 120px;
+    flex-wrap: wrap;
+}
+.gecko{
+    color: burlywood;
+}
+.copyright ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.copyright ul li{
+    margin-right: 20px;
+}
+#up-arrow{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: burlywood;
+    border-radius: 100%;
+    background-clip: content-box;
+    border:1px solid burlywood;
+    padding: 8px;
+} 
+.arrowUp{
+    right: 10px;
+    bottom: 15px;
+}
+
+@media screen and (max-width:500px){
+    .media .page-name,.page-details,.slide-zero,#up-arrow,.copyright ul{
+        display: none;
+    }
+    .media{
+        font-size: 25px;
+        height: 70px;
+        padding: 0 10px;
+    }
+    .media select{
+        font-size: 17px;
+        font-weight: normal;
+    }
+    .media .icons i{
+        width: 40px;
+        height: 40px;
+        border: 2px solid;
+    }
+    .word{
+        letter-spacing: 0;
+    }
+    .bar{
+        display: flex;
+        margin: 20px ;
+    }
+    .nav-links ul{
+        display: none;
+    }
+    .settings i{
+        font-size: 30px;
+    }
+    .slide{
+        flex-direction: column;
+        line-height: 30px;
+    }
+    .slides{
+        background-repeat: no-repeat;
+    }
+    #hints{
+        padding: 30px;
+    }
+    .home-page {
+        margin: 10px;
+    }
+    .product-details button{
+        letter-spacing: 0;
+        color: rgb(188, 119, 28);
+    }
+    .product,.product-one,.product-two{
+        height: 360px;
+    }
+    #pro-detail{
+        padding: 50px 0;
+        font-weight: bold;
+        line-height: 15px;
+    }
+    .lastpage-container{
+        justify-content: center;
+        line-height: 35px;
+    }
+    #ph-number{
+        justify-content: center;
+    }
+    #adress{
+        text-align: center;
+        font-weight: bold;
+    }
+    #adress h1{
+        font-size: 50px; 
+        font-weight: normal;
+        letter-spacing: 4px;
+    }
+    .loc i,.gmail i,#ph-number i{
+        margin-top: 9px;     
+    }
+    .gmail p{
+        padding-left: 12px;
+    }
+    #social-icon{
+        font-size: 23px;
+    }
+    .information i{
+        display: inline-block;
+    }
+    .information{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 0;
+    }
+    .log{
+        text-align: center;
+        line-height: 25px;
+    }
+    #sign-up input{
+        padding: 10px;
+    }
+    #sign-up button{
+        background-color: rgb(144, 86, 11);
+        padding: 7px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .copyright{
+        padding:20px 15px;
+    }
+   
+}

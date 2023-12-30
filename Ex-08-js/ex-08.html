@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-8</title>
+    <link rel="stylesheet" href="ex-08.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flex line">
+          <label>Exercise No:8</label>
+          <h2 class="content-head">Display Years in Reverse and Find Leap Year</h2>
+        </div>
+        <div class="line">
+          <div class="round flex">
+            <label>Enter First Date</label>
+            <input type="date" id="input-firstDate" class="age inputfield"/>
+          </div>
+          <div class="round flex">
+            <label>Enter Second Date</label>
+            <input type="date" id="input-secondDate" class="age inputfield"/>
+          </div>
+        </div>
+        <div class="round flex">
+            <label>Select Any Choice:</label>
+            <select class="age inputfield " id="selectOption" onchange="calculate()">
+              <option selected="selected" value="select">Select</option>
+              <option value="forLoop">For Loop</option>
+              <option value="whileLoop">While Loop</option>
+              <option value="doWhileLoop">Do While Loop</option>
+            </select> 
+        </div>
+        <div class="flexround">
+            <label>For loop</label>
+            <label>While loop</label>
+            <label>Do While loop</label>
+        </div>
+        <div class="flexround">
+          <div class="flexrow boxborder" id="forLoopBox">
+              <label > Display Years in reverse</label>
+              <textarea id="displayReverseYearsFor" ></textarea>
+              <label >Display all Leap years</label>
+              <textarea id="displayLeapYearsFor" readonly></textarea>
+              <label>Number of leap years</label>
+              <input type="text" class="age" id="displayTotalLeapFor" readonly>
+          </div> 
+          <div class="flexrow boxborder" id="whileLoopBox">
+            <label > Display Years in reverse</label>
+            <textarea id="displayReverseYearsWhile" readonly></textarea>
+            <label >Display all Leap years</label>
+            <textarea id="displayLeapYearsWhile" readonly></textarea>
+            <label>Number of leap years</label>
+            <input type="number" class="age" id="displayTotalLeapWhile" readonly>
+        </div>
+        <div class="flexrow boxborder" id="dowhileLoopBox">
+          <label > Display Years in reverse</label>
+            <textarea id="displayReverseYearsDowhile" readonly></textarea>
+            <label >Display all Leap years</label>
+            <textarea id="displayLeapYearsDowhile" readonly></textarea>
+            <label>Number of leap years</label>
+            <input type="number" class="age" id="displayTotalLeapDowhile" readonly>
+      </div>
+        </div>
+        <div class="blue-button round flex-space">
+          <button onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Handling Strings</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+    <script src="ex-08.js"></script>
+  </body>
+</html>

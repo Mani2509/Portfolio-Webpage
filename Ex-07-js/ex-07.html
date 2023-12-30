@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-7</title>
+    <link rel="stylesheet" href="ex-07.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flex-space line">
+          <label>Exercise No:7</label>
+          <h2 class="content-head">Date Functions</h2>
+        </div>
+        <div class="line">
+          <div class="round flex-space">
+            <label>Enter the Date</label>
+            <input type="date" id="input-firstDate" class="age"/>
+          </div>
+        </div>
+        <div class="round flex-space">
+            <label>Day</label>
+            <input type="text" id="displayDay" class="age" readonly/>
+          </div>
+        <div class="round flex-space">
+            <label>Month</label>
+            <input type="text" id="displayMonth" class="age"  readonly/>
+          </div>
+        <div class="round  flex-space">
+            <label>No of days from beginning of the year:</label>
+            <input type="number" id="displayDayFromYear" class="age"  readonly>
+          </div>
+          <div class="round  flex-space">
+            <label>Current Week Number of the month</label>
+            <input type="number" id="displayWeekNo" class="age"  readonly>
+          </div>
+          <div class="round flex-space">
+            <label>Days Left(until next christmas)</label>
+            <input type="number" id="displaychristmas" class="age" readonly/>
+          </div>
+          <div class="round flex-space">
+            <label>Weekend/Not</label>
+            <input type="text" id="displayWeekend" class="age" readonly />
+          </div>
+        <div class="blue-button round flex-space">
+          <button onclick="calculate()">Calculate</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Handling Strings</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+    <script src="ex-07.js"></script>
+  </body>
+</html>

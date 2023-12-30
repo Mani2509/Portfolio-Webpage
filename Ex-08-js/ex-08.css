@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  .jsprogram {
+    font-family: "Comic Neue", cursive;
+  }
+  .flex-space {
+    display: flex;
+    justify-content: space-between;
+  }
+  #header {
+    background-color: #365278;
+    color: #e2d9cc;
+    padding: 0 10px;
+    align-items: center;
+  }
+  img {
+    padding: 0 5px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: white;
+    justify-content: center;
+    height: 653px;
+  }
+  #content {
+    background-color: #f3f3cb;
+    color: #36537a;
+    padding: 20px ;
+    width: 90%;
+  }
+  .flexonly{
+      display: flex;
+  }
+  .flexround{
+    display: flex;
+    justify-content: space-around;
+  }
+  .flexrow{
+    display: flex;
+    flex-direction: column;
+  }
+  .line{
+      border-bottom: 1px solid;
+  }
+  .boxborder{
+    border: 1px solid;
+    width: 300px;
+    height: 330px;
+    align-items: center;
+  }
+  textarea{
+    margin-bottom: 10px;
+  }
+  .inputfield{
+    margin-left: 120px;
+  }
+  .round {
+      padding:10px 90px 10px 20px;
+      align-items: baseline;
+  }
+  .round label{
+    width: 180px;
+  }
+  .age {
+      width: 120px;
+      height: 30px;
+  }
+  textarea{
+      height: 100px;
+      padding:5px;
+      width: 130px;
+  }
+
+  .blue-button {
+      justify-content: flex-end;
+  }
+  button {
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #365278;
+  }
+  
+  #footer {
+    background-color: #e1f2f2;
+    color: #36537a;
+    align-items: center;
+    padding: 0 20px;
+  }
+  

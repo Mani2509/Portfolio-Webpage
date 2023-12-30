@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-3</title>
+    <link rel="stylesheet" href="ex-03.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header" class="flex-space">
+      <div class="logo flex-space">
+        <img src="infologo.png" alt="infologo" />
+        <h2>INFOTECH <br />ASHRAM</h2>
+      </div>
+      <div>
+        <h1 class="jsprogram">JAVASCRIPT TRAINING PROGRAM</h1>
+      </div>
+      <div>
+        <p id="current-date"></p>
+        <p id="current-time"></p>
+      </div>
+    </div>
+    <div class="container flex">
+      <div id="content">
+        <div class="round flexonly line">
+          <label>Exercise No:3</label>
+          <h2 class="content-head">Marriage Age Validation</h2>
+        </div>
+        <div class=" ">
+          <div class="round flexonly">
+            <label>Enter Person`s Age</label>
+            <input type="number" id="input-age" min="1" max="110" class="age" onkeypress="avoidnegative(event)" />
+          </div>
+          <div class="radioround flexonly line">
+            <label>Gender</label>
+            <div>
+              <label><input type="radio" id="gen-male" name="gender" />Male</label>
+              <label class="malefemale">
+                <input type="radio" id="gen-female" name="gender" />Female</label>
+            </div>
+            </div>
+          <div class="round  flexonly">
+            <label> Eligible for Marriage/Not</label>
+            <textarea id="displayoutput"></textarea>
+          </div>
+        </div>
+        <div class="blue-button round flex-space">
+          <button onclick="validateage()">Validate</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+       
+      </div>
+    </div>
+
+
+    <footer id="footer" class="flex-space">
+      <p>Learning Objective : Handling Strings</p>
+      <div class="flex">
+        <p>Powered by :</p>
+        <img src="logo.jpeg" width="60px" height="50px" alt="logo" />
+      </div>
+    </footer>
+    <script src="ex-03.js"></script>
+  </body>
+</html>
